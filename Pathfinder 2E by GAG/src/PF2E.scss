@@ -1,0 +1,24 @@
+//globals?
+.sheet-wrapper{
+    min-width: 8.5in;
+    min-height: 11in;
+    overflow: scroll;
+    background-color: #0000ff22;
+    display: grid;
+    grid-auto-columns: 1fr 2fr 2fr;
+    grid-auto-rows: 250px 50px auto;
+}
+
+.sheet-page{
+    display: contents;
+    > div{
+      border: 3px solid black;
+    }
+}
+
+
+//imports
+//@import "globals.scss"; not sure if this will be needed
+@import "top.scss";
+@import "nav.scss";
+@import "page-char/page-char.scss";

@@ -1,0 +1,8 @@
+{
+    "extensions.confirmedUriHandlerExtensionIds": [
+    
+    ],
+    "files.associations": {
+        "*.html": "njk"
+      },
+}
