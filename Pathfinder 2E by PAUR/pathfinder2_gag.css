@@ -1,19 +1,35 @@
+img {
+  max-width: 100%; }
+
 .sheet-wrapper {
   min-width: 8.5in;
   min-height: 11in;
   overflow: scroll;
-  background-color: #0000ff22;
+  background-color: black;
   display: grid;
   grid-auto-columns: 1fr 2fr 2fr;
-  grid-auto-rows: 250px 50px auto; }
+  grid-auto-rows: 250px 50px auto;
+  grid-gap: 3px; }
 
 .sheet-page {
-  display: contents; }
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: span 3; }
   .sheet-page > div {
-    border: 3px solid black; }
+    background: white; }
+
+.sheet-left {
+  float: left; }
+
+.sheet-right {
+  float: right; }
+
+.sheet-top {
+  grid-column: span 3;
+  background: white; }
 
 .sheet-page-nav {
-  background-color: #0000006b;
+  background-color: white;
   grid-column: span 3; }
 
 .sheet-charpage .sheet-col1 {
@@ -24,3 +40,76 @@
 
 .sheet-charpage .sheet-col3 {
   grid-column: 3/4; }
+
+.sheet-combat-col1 {
+  grid-column: 1/span 1; }
+
+.sheet-combat-col2 {
+  grid-column: 2/span 1; }
+
+.sheet-combat-row1 {
+  grid-row: 1/span 1; }
+
+.sheet-combat-row2 {
+  grid-row: 2/span 1; }
+
+.sheet-combat-row3 {
+  grid-row: 3/span 1; }
+
+input {
+  max-width: 100%;
+  border: 2px solid black;
+  padding: 2px; }
+
+.sheet-combat-stats {
+  display: grid;
+  grid-template-columns: 50%;
+  grid-gap: 3px;
+  background: black; }
+  .sheet-combat-stats > * {
+    background: white; }
+  .sheet-combat-stats .sheet-left {
+    width: 40%; }
+  .sheet-combat-stats .sheet-right {
+    width: 60%; }
+
+.sheet-saving-throws-box {
+  grid-column: 1/ span 2; }
+
+.sheet-hp-box .sheet-left {
+  height: 100%; }
+  .sheet-hp-box .sheet-left h5 {
+    text-align: center;
+    margin-top: 5px; }
+
+.sheet-hp-box .sheet-right h3 {
+  text-align: center; }
+
+.sheet-hp-box .sheet-right div {
+  display: flex;
+  align-items: center;
+  margin: 0 2px; }
+
+.sheet-hp-box .sheet-right input {
+  min-width: 30%;
+  flex-grow: 2;
+  padding: 0px 2px;
+  margin: 2px 0 2px 2px; }
+
+.sheet-blood-drop {
+  height: 85%;
+  margin: 0 3px;
+  position: relative; }
+  .sheet-blood-drop input {
+    border: none;
+    background: unset;
+    width: 80%;
+    border-bottom: 2px solid black;
+    border-radius: 0;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -75%); }
+  .sheet-blood-drop img {
+    height: 100%;
+    margin: 10% 0 0 0; }
