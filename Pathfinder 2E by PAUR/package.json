@@ -1,0 +1,7 @@
+{
+    "name": "Pathfinder_2E_by_PAUR",
+    "devDependencies": {
+      "node-sass": "^4.14.1",
+      "nunjucks": "^3.2.2"
+    }
+  }
